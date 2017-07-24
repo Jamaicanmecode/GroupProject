@@ -1,0 +1,83 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>   
+    </head>
+
+	<body>
+        <div data-role="page" id="home">
+        <header data-role="header">
+            <h1>Job Search</h1>
+             <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+        </header>
+
+        <article data-role="content">
+            <ul data-role="listview" data-filter="true">
+
+                <li>
+                    <a href="#WebDeveloper" data-transition="slide">
+                    <img src="images/logo1.jpg" alt="Web Developer" height="100" width="100"/>
+                    <h2>Web Developer - Atlanta GA</h2>
+                    <p>Need qualified individual to join forward facing team</p>
+                    </a>
+                </li>
+
+                
+            </ul>
+        </article>
+
+        <footer data-role="footer" data-position="fixed">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#infoPage" data-icon="info">Info</a></li>
+        </footer>
+        </div>
+        <!--end of page-->
+
+        <div data-role="page" id="WebDeveloper">
+        <header data-role="header">
+            <h1>Web Developer</h1>
+            <a href="#home" data-icon="grid" data-iconpos="notext" data-transition="slide" data-direction="reversed">Home</a>
+        </header>
+        <img src="images/logo1.jpg" alt="Web Developer"/>
+        <footer data-role="footer" data-position="fixed">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#duckHorse" data-icon="arrow-l" data-transition="slide">Left</a></li>
+                    <li><a href="#cheeta" data-icon="arrow-r" data-transition="slide">Right</a></li>
+                </ul>
+            </nav>
+        </footer>
+        </div>
+
+        <!--end of page-->
+
+       
+        <!-- INFO PAGE-->
+        <div data-role="page" id="infoPage">
+        <header data-role="header">
+            <h1>Information</h1>
+            <a href="#home" data-icon="grid" data-iconpos="notext" data-transition="slide" data-direction="reversed">Home</a>
+        </header>
+        <div class="infoBody">
+        <p class="infoParagraph">This website was created by Zack Downing. This site utilizes mobile first strategies to ensure a seemless mobile browsing experience. 
+            It utilizes jquery for layout, organization, and transitioning. Please note, a Duck Horse is not a real animal.
+        </p>
+        </div>
+        </div>
+         <footer data-role="footer" data-position="fixed">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="home">Home</a></li>
+                    <li><a href="#" data-icon="grid">Photos</a></li>
+                    <li><a href="info" data-icon="info">Info</a></li>
+        </footer>
+        <!--end of page-->
+	</body>
+</html>
